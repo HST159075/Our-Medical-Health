@@ -1,0 +1,380 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background: #f7fafc;
+}
+
+header {
+  background: #2c7a7b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav button {
+  background: #38b2ac;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #285e61;
+}
+
+.medicine-list {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.medicine-list h2 {
+  margin-bottom: 20px;
+  color: #2c7a7b;
+}
+
+.medicine {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 500px;
+}
+
+.medicine h3 {
+  color: #2c7a7b;
+  margin-bottom: 5px;
+}
+
+.medicine p {
+  margin-bottom: 10px;
+  color: #4a5568;
+}
+
+.medicine button {
+  background: #38b2ac;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* ইমেজ — রেসপন্সিভ, প্রপার কভার এবং স্মার্ট ফোকাস */
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* ছবির প্রপোরশন ধরে রাখবে ও ভরাট করবে */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: #f0f0f0;
+}
+
+.product select {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* hover ইফেক্ট */
+.product-img:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.medicine button:hover {
+  background: #2c7a7b;
+}
+
+footer {
+  background: #2c7a7b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 90%;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .medicine {
+    width: 95%;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7fafc;
+}
+
+.medicine-list {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.medicine-list h2 {
+  color: #2c7a7b;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Product Card */
+.product {
+  background: white;
+  padding: 20px;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image - শুধু .product-img রাখুন */
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  /* ছবির প্রপোরশন ধরে রাখবে ও ভরাট করবে */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 10px;
+  transition: transform .25s ease, box-shadow .25s ease;
+  background: #f0f0f0;
+}
+
+/* Product Title */
+.product h3 {
+  color: #2c7a7b;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Product Description */
+.product p {
+  color: #4a5568;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Buy Button */
+.product button {
+  background: #38b2ac;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/*
+.product button:hover {
+    background: #2c7a7b;
+}
+
+/* Responsive 
+@media (max-width: 768px) {
+    .product {
+        width: 90%;
+        margin: 15px auto;
+    }
+}*/
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      width: 220px;
+      vertical-align: top;
+      text-align: center;
+    }
+
+    .product img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    button {
+      padding: 8px 15px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkgreen;
+    }
+
+    #cart {
+      margin-top: 30px;
+      padding: 15px;
+      border: 2px solid #444;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+
+    #cart h3 {
+      margin-top: 0;
+    }
+
+    #cart ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #cart ul li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .remove-btn {
+      background: red;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .remove-btn:hover {
+      background: darkred;
+    }
+
+    #checkout {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background: blue;
+      border-radius: 5px;
+    }
+
+    #checkout:hover {
+      background: darkblue;
+    }
+     body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      display: inline-block;
+      width: 220px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    button {
+      padding: 8px 15px;
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: darkgreen;
+    }
+
+    #cart {
+      border: 1px solid #666;
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    .remove-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 2px 6px;
+      cursor: pointer;
+      margin-left: 5px;
+      border-radius: 3px;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      width: 400px;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .modal h2 {
+      margin-top: 0;
+    }
