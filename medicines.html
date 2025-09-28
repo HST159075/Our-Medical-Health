@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicines - HealthCare Pharmacy</title>
+  <link rel="stylesheet" href="medicines.css">
+  
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>💊 Medicines</h1>
+    <nav>
+      <button onclick="location.href='index.html'">🏠 Home</button>
+      <button onclick="location.href='personalcare.html'">🧴 Personal Care</button>
+      <button onclick="location.href='healthdevices.html'">🩺 Health Devices</button>
+    </nav>
+  </header>
+
+  <!-- 🛒 Cart Section -->
+  <div id="cart">
+    <h3>🛒 Your Cart</h3>
+    <ul id="cartItems"></ul>
+    <button id="checkout" onclick="checkout()">✅ Checkout</button>
+  </div>
+  <h2>Available Medicines</h2>
+
+  <!-- Search Bar -->
+  <input type="text" id="searchBar" placeholder="Search medicines..." onkeyup="searchMedicine()">
+
+  <!-- Medicine Container -->
+  <div id="medicine-container">
+
+    <!-- Product Example -->
+    <div class="product">
+      <img src="images/paracetamol-500mg.jpg" alt="Paracetamol 500mg" class="product-img">
+      <h3>Paracetamol 500mg</h3>
+      <p>For fever & pain relief</p>
+      <label>Choose Company:</label>
+      <select id="company-paracetamol">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Beximco Pharma">Beximco Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Paracetamol 500mg',
+           document.getElementById('company-paracetamol').value,
+           '৳30','10 tablets per strip')">Buy Now</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="images/amoxicillin-250mg.jpg" alt="Amoxicillin 250mg" class="product-img">
+      <h3>Amoxicillin 250mg</h3>
+      <p>Antibiotic for infections</p>
+      <label>Choose Company:</label>
+      <select id="company-amoxicillin250">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Beximco Pharma">Beximco Pharma</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+      </select>
+      <button onclick="showDetails('Amoxicillin 250mg',
+           document.getElementById('company-amoxicillin250').value,
+           '৳50','12 capsules per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="images/amoxicillin-500mg.jpg" alt="Amoxicillin 500mg" class="product-img">
+      <h3>Amoxicillin 500mg</h3>
+      <p>Commonly prescribed antibiotic</p>
+      <label>Choose Company:</label>
+      <select id="company-amoxicillin500">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Amoxicillin 500mg',
+           document.getElementById('company-amoxicillin500').value,
+           '৳80','12 capsules per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="images/cough-syrup.jpg" alt="Cough Syrup" class="product-img">
+      <h3>Cough Syrup (Tuspel)</h3>
+      <p>For cough & sore throat</p>
+      <label>Choose Company:</label>
+      <select id="company-cough">
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+      </select>
+      <button onclick="showDetails('Cough Syrup',
+           document.getElementById('company-cough').value,
+           '৳75','100ml bottle')">Buy Now</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="images/napa-extend.jpg" alt="Napa Extend 665mg" class="product-img">
+      <h3>Napa Extend 665mg</h3>
+      <p>Paracetamol (Extended Release)</p>
+      <label>Choose Company:</label>
+      <select id="company-napaextend">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Beximco Pharma">Beximco Pharma</option>
+      </select>
+      <button onclick="showDetails('Napa Extend 665mg',
+           document.getElementById('company-napaextend').value,
+           '৳40','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <img src="images/ibuprofen-200mg.jpg" alt="Ibuprofen 200mg" class="product-img">
+      <h3>Ibuprofen 200mg</h3>
+      <p>Pain and inflammation relief</p>
+      <label>Choose Company:</label>
+      <select id="company-ibuprofen">
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+        <option value="Square Pharma">Square Pharma</option>
+      </select>
+      <button onclick="showDetails('Ibuprofen 200mg',
+           document.getElementById('company-ibuprofen').value,
+           '৳35','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+      <img src="images/tramadol-50mg.jpg" alt="Tramadol 50mg" class="product-img">
+      <h3>Tramadol 50mg</h3>
+      <p>Opioid painkiller (prescription only)</p>
+      <label>Choose Company:</label>
+      <select id="company-tramadol">
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Square Pharma">Square Pharma</option>
+      </select>
+      <button onclick="showDetails('Tramadol 50mg',
+           document.getElementById('company-tramadol').value,
+           '৳120','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 8 -->
+    <div class="product">
+      <img src="images/omeprazole-20mg.jpg" alt="Omeprazole 20mg" class="product-img">
+      <h3>Omeprazole 20mg</h3>
+      <p>Acidity & gastric relief</p>
+      <label>Choose Company:</label>
+      <select id="company-omeprazole">
+        <option value="Incepta Pharma">Incepta Pharma</option>
+        <option value="Beximco Pharma">Beximco Pharma</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Omeprazole 20mg',
+           document.getElementById('company-omeprazole').value,
+           '৳25','14 capsules per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 9 -->
+    <div class="product">
+      <img src="images/loratadine-10mg.jpg" alt="Loratadine 10mg" class="product-img">
+      <h3>Loratadine 10mg</h3>
+      <p>Anti-allergic</p>
+      <label>Choose Company:</label>
+      <select id="company-loratadine">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+      </select>
+      <button onclick="showDetails('Loratadine 10mg',
+           document.getElementById('company-loratadine').value,
+           '৳20','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 10 -->
+    <div class="product">
+      <img src="images/metformin-500mg.jpg" alt="Metformin 500mg" class="product-img">
+      <h3>Metformin 500mg</h3>
+      <p>Diabetes treatment</p>
+      <label>Choose Company:</label>
+      <select id="company-metformin">
+        <option value="Beximco Pharma">Beximco Pharma</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Metformin 500mg',
+           document.getElementById('company-metformin').value,
+           '৳45','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 11 -->
+    <div class="product">
+      <img src="images/azithromycin-500mg.jpg" alt="Azithromycin 500mg" class="product-img">
+      <h3>Azithromycin 500mg</h3>
+      <p>Antibiotic for bacterial infections</p>
+      <label>Choose Company:</label>
+      <select id="company-azithro">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+      </select>
+      <button onclick="showDetails('Azithromycin 500mg',
+           document.getElementById('company-azithro').value,
+           '৳90','3 tablets per pack')">Buy Now</button>
+    </div>
+    <!-- Product 12 -->
+    <div class="product">
+      <img src="images/fexofenadine-120mg.jpg" alt="Fexofenadine 120mg" class="product-img">
+      <h3>Fexofenadine 120mg</h3>
+      <p>Anti-allergy tablet</p>
+      <label>Choose Company:</label>
+      <select id="company-fexo">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+      </select>
+      <button onclick="showDetails('Fexofenadine 120mg',
+           document.getElementById('company-fexo').value,
+           '৳60','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 13 -->
+    <div class="product">
+      <img src="images/montelukast-10mg.jpg" alt="Montelukast 10mg" class="product-img">
+      <h3>Montelukast 10mg</h3>
+      <p>Asthma & allergy control</p>
+      <label>Choose Company:</label>
+      <select id="company-montelukast">
+        <option value="Incepta Pharma">Incepta Pharma</option>
+        <option value="Square Pharma">Square Pharma</option>
+      </select>
+      <button onclick="showDetails('Montelukast 10mg',
+           document.getElementById('company-montelukast').value,
+           '৳90','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 14 -->
+    <div class="product">
+      <img src="images/pantoprazole-40mg.jpg" alt="Pantoprazole 40mg" class="product-img">
+      <h3>Pantoprazole 40mg</h3>
+      <p>Acidity & gastric relief</p>
+      <label>Choose Company:</label>
+      <select id="company-pantoprazole">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Pantoprazole 40mg',
+           document.getElementById('company-pantoprazole').value,
+           '৳70','14 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 15 -->
+    <div class="product">
+      <img src="images/ranitidine-150mg.jpg" alt="Ranitidine 150mg" class="product-img">
+      <h3>Ranitidine 150mg</h3>
+      <p>Ulcer & gastric pain relief</p>
+      <label>Choose Company:</label>
+      <select id="company-ranitidine">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Beximco Pharma">Beximco Pharma</option>
+      </select>
+      <button onclick="showDetails('Ranitidine 150mg',
+           document.getElementById('company-ranitidine').value,
+           '৳25','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 16 -->
+    <div class="product">
+      <img src="images/doxycycline-100mg.jpg" alt="Doxycycline 100mg" class="product-img">
+      <h3>Doxycycline 100mg</h3>
+      <p>Antibiotic for infections</p>
+      <label>Choose Company:</label>
+      <select id="company-doxy">
+        <option value="Incepta Pharma">Incepta Pharma</option>
+        <option value="Square Pharma">Square Pharma</option>
+      </select>
+      <button onclick="showDetails('Doxycycline 100mg',
+           document.getElementById('company-doxy').value,
+           '৳65','10 capsules per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 17 -->
+    <div class="product">
+      <img src="images/fluconazole-150mg.jpg" alt="Fluconazole 150mg" class="product-img">
+      <h3>Fluconazole 150mg</h3>
+      <p>Anti-fungal treatment</p>
+      <label>Choose Company:</label>
+      <select id="company-fluconazole">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+      </select>
+      <button onclick="showDetails('Fluconazole 150mg',
+           document.getElementById('company-fluconazole').value,
+           '৳50','1 tablet per pack')">Buy Now</button>
+    </div>
+
+    <!-- Product 18 -->
+    <div class="product">
+      <img src="images/antacid-suspension.jpg" alt="Antacid Suspension" class="product-img">
+      <h3>Antacid Suspension</h3>
+      <p>Relief from acidity & indigestion</p>
+      <label>Choose Company:</label>
+      <select id="company-antacid">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+      </select>
+      <button onclick="showDetails('Antacid Suspension',
+           document.getElementById('company-antacid').value,
+           '৳85','200ml bottle')">Buy Now</button>
+    </div>
+
+    <!-- Product 19 -->
+    <div class="product">
+      <img src="images/multivitamin.jpg" alt="Multivitamin" class="product-img">
+      <h3>Multivitamin</h3>
+      <p>Daily health supplement</p>
+      <label>Choose Company:</label>
+      <select id="company-multivitamin">
+        <option value="Beximco Pharma">Beximco Pharma</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+      </select>
+      <button onclick="showDetails('Multivitamin',
+           document.getElementById('company-multivitamin').value,
+           '৳120','30 tablets per bottle')">Buy Now</button>
+    </div>
+
+    <!-- Product 20 -->
+    <div class="product">
+      <img src="images/vitamin-c.jpg" alt="Vitamin C 500mg" class="product-img">
+      <h3>Vitamin C 500mg</h3>
+      <p>Boosts immunity</p>
+      <label>Choose Company:</label>
+      <select id="company-vitc">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="ACI Limited">ACI Limited</option>
+      </select>
+      <button onclick="showDetails('Vitamin C 500mg',
+           document.getElementById('company-vitc').value,
+           '৳90','10 tablets per strip')">Buy Now</button>
+    </div>
+
+    <!-- Product 21 -->
+    <div class="product">
+      <img src="images/zinc-supplement.jpg" alt="Zinc Supplement" class="product-img">
+      <h3>Zinc Supplement</h3>
+      <p>Immune system support</p>
+      <label>Choose Company:</label>
+      <select id="company-zinc">
+        <option value="Square Pharma">Square Pharma</option>
+        <option value="Renata Ltd">Renata Ltd</option>
+        <option value="Incepta Pharma">Incepta Pharma</option>
+      </select>
+      <button onclick="showDetails('Zinc Supplement',
+           document.getElementById('company-zinc').value,
+           '৳75','10 tablets per strip')">Buy Now</button>
+    </div>
+
+
+
+    <!-- আরও product থাকবে এখানে -->
+
+  
+ 
+  <div id="detailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="medName"></h2>
+      <p><b>Company:</b> <span id="medCompany"></span></p>
+      <p><b>Price:</b> <span id="medPrice"></span></p>
+      <p><b>Pack:</b> <span id="medPack"></span></p>
+      <button onclick="addToCart()">🛒 Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 HealthCare Pharmacy | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    let cart = [];
+    let selectedMedicine = {};
+
+    function showDetails(name, company, price, pack) {
+      selectedMedicine = { name, company, price, pack };
+
+      document.getElementById("medName").innerText = name;
+      document.getElementById("medCompany").innerText = company;
+      document.getElementById("medPrice").innerText = price;
+      document.getElementById("medPack").innerText = pack;
+
+      document.getElementById("detailsModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("detailsModal").style.display = "none";
+    }
+
+    function addToCart() {
+      let item = `${selectedMedicine.name} (${selectedMedicine.company}) - ${selectedMedicine.price}`;
+      cart.push(item);
+      updateCart();
+      closeModal();
+    }
+
+    function updateCart() {
+      let cartList = document.getElementById("cartItems");
+      cartList.innerHTML = cart.map((item, index) =>
+        "<li>" + item + " <button class='remove-btn' onclick='removeFromCart(" + index + ")'>X</button></li>"
+      ).join('');
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    function checkout() {
+      if (cart.length === 0) {
+        alert("Your cart is empty!");
+      } else {
+        alert("Thank you for your order!\nYou ordered: \n" + cart.join("\n"));
+        cart = []; // Clear cart
+        updateCart();
+      }
+    }
+  </script>
+
+</body>
+
+</html>
