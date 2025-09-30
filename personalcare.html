@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Care Products</title>
+  <link rel="stylesheet" href="personalcare.css">
+</head>
+<body>
+  <header>
+    <h1>🌿 HealthCare Personal Care</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='#products'">Our Products</button>
+     <button onclick="location.href='healthdevices.html'">Health Device</button>
+
+      
+      <button onclick="location.href='#contact'">Contact</button>
+    </nav>
+  </header>
+
+  <section id="products">
+    <h2>Personal Care Products</h2>
+    <div class="product-list">
+      <!-- Example Product 1 -->
+      <div class="product">
+        <img src="images/soap.jpg" alt="Herbal Soap" class="product-img">
+        <h3>Herbal Soap</h3>
+        <p>Natural cleansing soap</p>
+        <label>Choose Brand:</label>
+        <select id="company-soap">
+          <option value="Brand A">Brand A</option>
+          <option value="Brand B">Brand B</option>
+        </select>
+        <button onclick="showDetails('Herbal Soap', document.getElementById('company-soap').value, 120)">Buy Now</button>
+      </div>
+
+      <!-- Example Product 2 -->
+      <div class="product">
+        <img src="images/shampoo.jpg" alt="Anti-Dandruff Shampoo" class="product-img">
+        <h3>Anti-Dandruff Shampoo</h3>
+        <p>Reduces dandruff & nourishes hair</p>
+        <label>Choose Brand:</label>
+        <select id="company-shampoo">
+          <option value="Brand X">Brand X</option>
+          <option value="Brand Y">Brand Y</option>
+        </select>
+        <button onclick="showDetails('Anti-Dandruff Shampoo', document.getElementById('company-shampoo').value, 250)">Buy Now</button>
+      </div>
+
+      <!-- Add more products similarly -->
+    </div>
+  </section>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCheckout()">&times;</span>
+      <h3>Checkout</h3>
+      <p id="checkoutDetails"></p>
+      <label>Quantity:</label>
+      <input type="number" id="checkoutQty" value="1" min="1">
+      <button onclick="proceedPayment()">Proceed Payment</button>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Chattogram, Bangladesh</p>
+    <p>📞 Phone: +880 1.........</p>
+    <p>📧 Email: alamtasin8@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 HealthCare Pharmacy | All Rights Reserved</p>
+  </footer>
+
+  <!-- Inline JS -->
+  <script>
+    function showDetails(name, company, price) {
+      const modal = document.getElementById('checkoutModal');
+      const details = document.getElementById('checkoutDetails');
+      details.textContent = `${name} - ${company} - ৳${price}`;
+      details.dataset.name = name;
+      details.dataset.company = company;
+      details.dataset.price = price;
+      modal.style.display = 'block';
+    }
+
+    function closeCheckout() {
+      document.getElementById('checkoutModal').style.display = 'none';
+    }
+
+    function proceedPayment() {
+      const qty = parseInt(document.getElementById('checkoutQty').value);
+      const details = document.getElementById('checkoutDetails');
+      const name = details.dataset.name;
+      const company = details.dataset.company;
+      const price = parseInt(details.dataset.price);
+
+      const total = qty * price;
+      const order = { name, company, qty, total };
+
+      // Show order summary (simulate server call)
+      alert(`Order Confirmed!\nProduct: ${name}\nCompany: ${company}\nQuantity: ${qty}\nTotal Payment: ৳${total}`);
+      closeCheckout();
+    }
+  </script>
+</body>
+</html>
