@@ -1,0 +1,767 @@
+[
+  {
+    "name": "Paracetamol 500mg",
+    "description": "For fever & pain relief",
+    "price": 30,
+    "image": "images/paracetamol_500.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Napa Extra",
+    "description": "Fast pain relief",
+    "price": 40,
+    "image": "images/napa_extra.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Antacid",
+    "description": "For acidity & heartburn",
+    "price": 25,
+    "image": "images/antacid.jpg",
+    "companies": ["Square Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Cough Syrup",
+    "description": "For sore throat & cold relief",
+    "price": 55,
+    "image": "images/cough_syrup.jpg",
+    "companies": ["Incepta Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Amoxicillin 250mg",
+    "description": "Antibiotic for infections",
+    "price": 50,
+    "image": "images/amoxicillin_250.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Ibuprofen 400mg",
+    "description": "For pain and inflammation",
+    "price": 35,
+    "image": "images/ibuprofen_400.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Vitamin C 500mg",
+    "description": "Immune support",
+    "price": 20,
+    "image": "images/vitamin_c_500.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Cetirizine 10mg",
+    "description": "For allergy relief",
+    "price": 15,
+    "image": "images/cetirizine_10.jpg",
+    "companies": ["ACI Limited", "Incepta Pharma"]
+  },
+  {
+    "name": "Paracetamol Syrup",
+    "description": "Children's fever & pain relief",
+    "price": 45,
+    "image": "images/paracetamol_syrup.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Omeprazole 20mg",
+    "description": "For acidity and GERD",
+    "price": 60,
+    "image": "images/omeprazole_20.jpg",
+    "companies": ["Renata Ltd", "Incepta Pharma"]
+  },
+  {
+    "name": "Salbutamol Inhaler",
+    "description": "For asthma relief",
+    "price": 150,
+    "image": "images/salbutamol_inhaler.jpg",
+    "companies": ["Beximco Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Diclofenac 50mg",
+    "description": "Pain & inflammation relief",
+    "price": 45,
+    "image": "images/diclofenac_50.jpg",
+    "companies": ["Incepta Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Metformin 500mg",
+    "description": "For type 2 diabetes",
+    "price": 25,
+    "image": "images/metformin_500.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Aspirin 75mg",
+    "description": "Blood thinner & pain relief",
+    "price": 30,
+    "image": "images/aspirin_75.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Hydrocortisone Cream",
+    "description": "For skin irritation & rashes",
+    "price": 55,
+    "image": "images/hydrocortisone_cream.jpg",
+    "companies": ["Incepta Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Loperamide 2mg",
+    "description": "For diarrhea relief",
+    "price": 20,
+    "image": "images/loperamide_2.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Levocetirizine 5mg",
+    "description": "For allergy & hay fever",
+    "price": 18,
+    "image": "images/levocetirizine_5.jpg",
+    "companies": ["ACI Limited", "Incepta Pharma"]
+  },
+  {
+    "name": "Azithromycin 250mg",
+    "description": "Antibiotic for infections",
+    "price": 70,
+    "image": "images/azithromycin_250.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Multivitamin Tablet",
+    "description": "Daily nutrient support",
+    "price": 40,
+    "image": "images/multivitamin_tablet.jpg",
+    "companies": ["Incepta Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Calcium 500mg",
+    "description": "For bone health",
+    "price": 35,
+    "image": "images/calcium_500.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+
+  
+  {
+    "name": "Fexofenadine 120mg",
+    "description": "For allergy relief",
+    "price": 25,
+    "image": "images/fexofenadine_120.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Ranitidine 150mg",
+    "description": "Reduces stomach acid",
+    "price": 30,
+    "image": "images/ranitidine_150.jpg",
+    "companies": ["Square Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Clarithromycin 500mg",
+    "description": "Antibiotic for respiratory infections",
+    "price": 80,
+    "image": "images/clarithromycin_500.jpg",
+    "companies": ["ACI Limited", "Incepta Pharma"]
+  },
+  {
+    "name": "Prednisolone 10mg",
+    "description": "Anti-inflammatory steroid",
+    "price": 45,
+    "image": "images/prednisolone_10.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Ondansetron 4mg",
+    "description": "For nausea & vomiting",
+    "price": 60,
+    "image": "images/ondansetron_4.jpg",
+    "companies": ["Renata Ltd", "Incepta Pharma"]
+  },
+  {
+    "name": "Lorazepam 1mg",
+    "description": "For anxiety relief",
+    "price": 100,
+    "image": "images/lorazepam_1.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Gabapentin 300mg",
+    "description": "For nerve pain & epilepsy",
+    "price": 90,
+    "image": "images/gabapentin_300.jpg",
+    "companies": ["Incepta Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Pantoprazole 40mg",
+    "description": "For acid reflux",
+    "price": 65,
+    "image": "images/pantoprazole_40.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Metronidazole 400mg",
+    "description": "Antibacterial & antiparasitic",
+    "price": 55,
+    "image": "images/metronidazole_400.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Doxycycline 100mg",
+    "description": "Broad spectrum antibiotic",
+    "price": 70,
+    "image": "images/doxycycline_100.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Topiramate 25mg",
+    "description": "For epilepsy & migraine",
+    "price": 75,
+    "image": "images/topiramate_25.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Propranolol 40mg",
+    "description": "For blood pressure & heart conditions",
+    "price": 50,
+    "image": "images/propranolol_40.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Amlodipine 5mg",
+    "description": "For hypertension",
+    "price": 30,
+    "image": "images/amlodipine_5.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Levothyroxine 50mcg",
+    "description": "For thyroid hormone replacement",
+    "price": 40,
+    "image": "images/levothyroxine_50.jpg",
+    "companies": ["ACI Limited", "Beximco Pharma"]
+  },
+  {
+    "name": "Salbutamol 4mg",
+    "description": "For asthma attacks",
+    "price": 35,
+    "image": "images/salbutamol_4.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Hydrochlorothiazide 25mg",
+    "description": "Diuretic for blood pressure",
+    "price": 25,
+    "image": "images/hctz_25.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Simvastatin 20mg",
+    "description": "For cholesterol control",
+    "price": 55,
+    "image": "images/simvastatin_20.jpg",
+    "companies": ["Square Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Clonazepam 0.5mg",
+    "description": "For anxiety & seizures",
+    "price": 95,
+    "image": "images/clonazepam_05.jpg",
+    "companies": ["Incepta Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Warfarin 5mg",
+    "description": "Blood thinner for clot prevention",
+    "price": 110,
+    "image": "images/warfarin_5.jpg",
+    "companies": ["Beximco Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Furosemide 40mg",
+    "description": "Diuretic for edema & hypertension",
+    "price": 35,
+    "image": "images/furosemide_40.jpg",
+    "companies": ["ACI Limited", "Renata Ltd"]
+  },
+  {
+    "name": "Risperidone 2mg",
+    "description": "For schizophrenia & bipolar disorder",
+    "price": 85,
+    "image": "images/risperidone_2.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Metoclopramide 10mg",
+    "description": "For nausea & vomiting",
+    "price": 25,
+    "image": "images/metoclopramide_10.jpg",
+    "companies": ["Incepta Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Lisinopril 10mg",
+    "description": "For hypertension",
+    "price": 40,
+    "image": "images/lisinopril_10.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Allopurinol 100mg",
+    "description": "For gout & uric acid reduction",
+    "price": 50,
+    "image": "images/allopurinol_100.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Levocarnitine 500mg",
+    "description": "Supports metabolism & energy",
+    "price": 65,
+    "image": "images/levocarnitine_500.jpg",
+    "companies": ["Renata Ltd", "Beximco Pharma"]
+  },
+  {
+    "name": "Nitrofurantoin 100mg",
+    "description": "Antibiotic for UTIs",
+    "price": 70,
+    "image": "images/nitrofurantoin_100.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Clopidogrel 75mg",
+    "description": "Blood thinner to prevent strokes",
+    "price": 90,
+    "image": "images/clopidogrel_75.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  
+  {
+    "name": "Levothyroxine 25mcg",
+    "description": "Thyroid hormone replacement",
+    "price": 35,
+    "image": "images/levothyroxine_25.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Carvedilol 6.25mg",
+    "description": "For heart failure & hypertension",
+    "price": 45,
+    "image": "images/carvedilol_625.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Pantoprazole 20mg",
+    "description": "Reduces stomach acid",
+    "price": 50,
+    "image": "images/pantoprazole_20.jpg",
+    "companies": ["Renata Ltd", "Beximco Pharma"]
+  },
+  {
+    "name": "Fexofenadine 180mg",
+    "description": "Allergy relief",
+    "price": 30,
+    "image": "images/fexofenadine_180.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Levocetirizine 10mg",
+    "description": "For allergy & hay fever",
+    "price": 20,
+    "image": "images/levocetirizine_10.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Prednisone 20mg",
+    "description": "Anti-inflammatory corticosteroid",
+    "price": 60,
+    "image": "images/prednisone_20.jpg",
+    "companies": ["Square Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Montelukast 10mg",
+    "description": "For asthma & allergies",
+    "price": 55,
+    "image": "images/montelukast_10.jpg",
+    "companies": ["Renata Ltd", "Incepta Pharma"]
+  },
+  {
+    "name": "Bisoprolol 5mg",
+    "description": "For hypertension & heart problems",
+    "price": 50,
+    "image": "images/bisoprolol_5.jpg",
+    "companies": ["Beximco Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Clobetasol Cream",
+    "description": "For skin inflammation & eczema",
+    "price": 65,
+    "image": "images/clobetasol_cream.jpg",
+    "companies": ["ACI Limited", "Renata Ltd"]
+  },
+  {
+    "name": "Gabapentin 100mg",
+    "description": "For nerve pain & epilepsy",
+    "price": 70,
+    "image": "images/gabapentin_100.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Amiodarone 200mg",
+    "description": "For irregular heartbeats",
+    "price": 120,
+    "image": "images/amiodarone_200.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Duloxetine 30mg",
+    "description": "For depression & anxiety",
+    "price": 85,
+    "image": "images/duloxetine_30.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Sertraline 50mg",
+    "description": "For depression & OCD",
+    "price": 75,
+    "image": "images/sertraline_50.jpg",
+    "companies": ["Incepta Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Olanzapine 5mg",
+    "description": "For schizophrenia & bipolar disorder",
+    "price": 95,
+    "image": "images/olanzapine_5.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Levamisole 150mg",
+    "description": "Anti-parasitic medicine",
+    "price": 40,
+    "image": "images/levamisole_150.jpg",
+    "companies": ["Renata Ltd", "Beximco Pharma"]
+  },
+  {
+    "name": "Nitroglycerin 0.3mg",
+    "description": "For chest pain relief",
+    "price": 150,
+    "image": "images/nitroglycerin_03.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Risperidone 4mg",
+    "description": "For schizophrenia & bipolar disorder",
+    "price": 110,
+    "image": "images/risperidone_4.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Losartan 50mg",
+    "description": "For hypertension",
+    "price": 55,
+    "image": "images/losartan_50.jpg",
+    "companies": ["Incepta Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Hydrochlorothiazide 12.5mg",
+    "description": "Diuretic for blood pressure",
+    "price": 25,
+    "image": "images/hctz_125.jpg",
+    "companies": ["Beximco Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Alprazolam 0.5mg",
+    "description": "For anxiety & panic disorder",
+    "price": 90,
+    "image": "images/alprazolam_05.jpg",
+    "companies": ["ACI Limited", "Renata Ltd"]
+  },
+  {
+    "name": "Metformin XR 500mg",
+    "description": "Extended-release for diabetes",
+    "price": 60,
+    "image": "images/metformin_xr_500.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Glimepiride 2mg",
+    "description": "For type 2 diabetes",
+    "price": 45,
+    "image": "images/glimepiride_2.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Levocarnitine 250mg",
+    "description": "Supports metabolism & energy",
+    "price": 40,
+    "image": "images/levocarnitine_250.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Spironolactone 25mg",
+    "description": "Diuretic & for heart failure",
+    "price": 35,
+    "image": "images/spironolactone_25.jpg",
+    "companies": ["Incepta Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Carbamazepine 200mg",
+    "description": "For epilepsy & nerve pain",
+    "price": 80,
+    "image": "images/carbamazepine_200.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Citalopram 20mg",
+    "description": "For depression & anxiety",
+    "price": 70,
+    "image": "images/citalopram_20.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Clarithromycin 250mg",
+    "description": "Antibiotic for infections",
+    "price": 65,
+    "image": "images/clarithromycin_250.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Cefixime 200mg",
+    "description": "Antibiotic for infections",
+    "price": 75,
+    "image": "images/cefixime_200.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Levofloxacin 500mg",
+    "description": "Broad-spectrum antibiotic",
+    "price": 90,
+    "image": "images/levofloxacin_500.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Mupirocin Cream",
+    "description": "Topical antibiotic for skin",
+    "price": 55,
+    "image": "images/mupirocin_cream.jpg",
+    "companies": ["Incepta Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Dexamethasone 4mg",
+    "description": "Anti-inflammatory steroid",
+    "price": 45,
+    "image": "images/dexamethasone_4.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Atenolol 50mg",
+    "description": "For high blood pressure",
+    "price": 40,
+    "image": "images/atenolol_50.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Esomeprazole 40mg",
+    "description": "Reduces stomach acid",
+    "price": 65,
+    "image": "images/esomeprazole_40.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Propranolol 20mg",
+    "description": "For heart rhythm & blood pressure",
+    "price": 45,
+    "image": "images/propranolol_20.jpg",
+    "companies": ["ACI Limited", "Beximco Pharma"]
+  },
+  {
+    "name": "Fluoxetine 20mg",
+    "description": "Antidepressant for depression & anxiety",
+    "price": 70,
+    "image": "images/fluoxetine_20.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Olmesartan 20mg",
+    "description": "For hypertension",
+    "price": 55,
+    "image": "images/olmesartan_20.jpg",
+    "companies": ["Incepta Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Hydroxychloroquine 200mg",
+    "description": "For malaria & autoimmune diseases",
+    "price": 60,
+    "image": "images/hydroxychloroquine_200.jpg",
+    "companies": ["Square Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Montelukast + Levocetirizine",
+    "description": "Combo for allergy & asthma",
+    "price": 80,
+    "image": "images/montelukast_levocetirizine.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Rifaximin 200mg",
+    "description": "Antibiotic for intestinal infections",
+    "price": 85,
+    "image": "images/rifaximin_200.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  
+  {
+    "name": "Paracetamol 650mg",
+    "description": "Fever and pain relief",
+    "price": 35,
+    "image": "images/paracetamol_650.jpg",
+    "companies": ["Beximco Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Naproxen 250mg",
+    "description": "Pain and inflammation relief",
+    "price": 40,
+    "image": "images/naproxen_250.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Antacid Chewable Tablet",
+    "description": "Relieves heartburn and acidity",
+    "price": 25,
+    "image": "images/antacid_chewable.jpg",
+    "companies": ["Renata Ltd", "Beximco Pharma"]
+  },
+  {
+    "name": "Cough Suppressant Syrup",
+    "description": "Relieves dry cough",
+    "price": 50,
+    "image": "images/cough_suppressant.jpg",
+    "companies": ["Incepta Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Vitamin D 1000 IU",
+    "description": "Supports bone health and immunity",
+    "price": 20,
+    "image": "images/vitamin_d_1000.jpg",
+    "companies": ["ACI Limited", "Beximco Pharma"]
+  },
+  {
+    "name": "Multivitamin Syrup",
+    "description": "Daily nutrients for children",
+    "price": 30,
+    "image": "images/multivitamin_syrup.jpg",
+    "companies": ["Square Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Cough Relief Capsule",
+    "description": "For productive cough",
+    "price": 55,
+    "image": "images/cough_relief_capsule.jpg",
+    "companies": ["Incepta Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Cetirizine + Vitamin C",
+    "description": "Allergy relief & immune support",
+    "price": 35,
+    "image": "images/cetirizine_vitc.jpg",
+    "companies": ["ACI Limited", "Square Pharma"]
+  },
+  {
+    "name": "Ibuprofen 200mg",
+    "description": "Mild pain and inflammation relief",
+    "price": 25,
+    "image": "images/ibuprofen_200.jpg",
+    "companies": ["Beximco Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Loratadine 10mg",
+    "description": "Relieves allergy symptoms",
+    "price": 20,
+    "image": "images/loratadine_10.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Antifungal Cream",
+    "description": "For skin fungal infections",
+    "price": 40,
+    "image": "images/antifungal_cream.jpg",
+    "companies": ["ACI Limited", "Renata Ltd"]
+  },
+  {
+    "name": "Ginger Syrup",
+    "description": "Relieves nausea and digestive discomfort",
+    "price": 30,
+    "image": "images/ginger_syrup.jpg",
+    "companies": ["Square Pharma", "Beximco Pharma"]
+  },
+  {
+    "name": "Zinc + Vitamin C Tablet",
+    "description": "Boosts immunity and recovery from cold",
+    "price": 25,
+    "image": "images/zinc_vitc.jpg",
+    "companies": ["Incepta Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Oral Rehydration Salt",
+    "description": "Prevents dehydration from diarrhea",
+    "price": 15,
+    "image": "images/ors.jpg",
+    "companies": ["Renata Ltd", "Beximco Pharma"]
+  },
+  {
+    "name": "Saline Nasal Drops",
+    "description": "Relieves nasal congestion",
+    "price": 20,
+    "image": "images/saline_nasal_drops.jpg",
+    "companies": ["Square Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Aspirin 100mg",
+    "description": "For mild pain and blood thinning",
+    "price": 30,
+    "image": "images/aspirin_100.jpg",
+    "companies": ["ACI Limited", "Beximco Pharma"]
+  },
+  {
+    "name": "Calcium + Vitamin D Tablet",
+    "description": "Supports bone and teeth health",
+    "price": 35,
+    "image": "images/calcium_vitd.jpg",
+    "companies": ["Renata Ltd", "Square Pharma"]
+  },
+  {
+    "name": "Magnesium 250mg",
+    "description": "Muscle & nerve support",
+    "price": 25,
+    "image": "images/magnesium_250.jpg",
+    "companies": ["Beximco Pharma", "Incepta Pharma"]
+  },
+  {
+    "name": "Oral Antacid Gel",
+    "description": "For quick heartburn relief",
+    "price": 30,
+    "image": "images/antacid_gel.jpg",
+    "companies": ["Square Pharma", "ACI Limited"]
+  },
+  {
+    "name": "Dextromethorphan + Guaifenesin Syrup",
+    "description": "Cough relief for mucus & dry cough",
+    "price": 45,
+    "image": "images/dextro_guaifenesin.jpg",
+    "companies": ["Incepta Pharma", "Renata Ltd"]
+  },
+  {
+    "name": "Antihistamine Cream",
+    "description": "For rashes and skin allergies",
+    "price": 35,
+    "image": "images/antihistamine_cream.jpg",
+    "companies": ["Beximco Pharma", "Square Pharma"]
+  },
+  {
+    "name": "Paracetamol + Caffeine Tablet",
+    "description": "For pain & fatigue relief",
+    "price": 40,
+    "image": "images/paracetamol_caffeine.jpg",
+    "companies": ["ACI Limited", "Incepta Pharma"]
+  }
+]
+
+
+
+
+
