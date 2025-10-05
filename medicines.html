@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicines - Health care Pharmacy</title>
+  <link rel="stylesheet" href="medicines.css">
+</head>
+<body>
+  <header>
+    <h1>💊 Health Care Pharmacy</h1>
+    <nav>
+      <button onclick="location.href='index.html'">Home</button>
+      <button onclick="location.href='personalcare.html'">Personal Care</button>
+      <button onclick="location.href='checkout.html'">Checkout</button>
+    </nav>
+  </header>
+   <section id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: ৳<span id="total">0</span></strong></p>
+    <button id="checkoutBtn" onclick="goToCheckout()">Checkout</button>
+  </section>
+
+  <section class="medicine-list">
+    <h2>Available Medicines</h2>
+
+    <input type="text" id="searchBar" placeholder="Search for medicines..." onkeyup="searchMedicine()">
+
+    <!-- Products will load here from JSON -->
+    <div id="medicine-container"></div>
+  </section>
+  <!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Checkout Payment</h2>
+
+    <div id="cartSummary">
+      <h3>Cart Summary</h3>
+      <ul id="cartItems"></ul>
+      <p><strong>Total: ৳<span id="cartTotal">0</span></strong></p>
+    </div>
+
+    <div id="paymentOptions">
+      <h3>Choose Payment Method:</h3>
+      <label><input type="radio" name="payMethod" value="card" checked> Credit/Debit Card</label>
+      <label><input type="radio" name="payMethod" value="bkash"> Bkash</label>
+      <label><input type="radio" name="payMethod" value="rocket"> Rocket</label>
+    </div>
+
+    <!-- Credit Card Form -->
+    <form id="cardForm">
+      <label>Card Holder Name:</label>
+      <input type="text" id="cardName" required><br>
+      <label>Card Number:</label>
+      <input type="text" id="cardNumber" maxlength="16" required><br>
+      <label>Expiry Date:</label>
+      <input type="month" id="expiry" required><br>
+      <label>CVV:</label>
+      <input type="password" id="cvv" maxlength="3" required><br>
+      <button type="submit">Pay Now</button>
+    </form>
+
+    <!-- Bkash / Rocket Forms -->
+    <form id="mobilePayForm" style="display:none;">
+      <label>Mobile Number:</label>
+      <input type="text" id="mobileNumber" placeholder="01XXXXXXXXX" required><br>
+      <label>Transaction ID:</label>
+      <input type="text" id="txnID" required><br>
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+</div>
+
+
+ 
+
+  <footer>
+    <p>© 2025 Red Rose Pharmacy | All Rights Reserved</p>
+  </footer>
+
+  <script src="medicines.js"></script>
+</body>
+</html>
